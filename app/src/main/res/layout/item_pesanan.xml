@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10sp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSekolah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/black"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgPesanan"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/geprek" />
+
+            <TextView
+
+                android:id="@+id/txtNamaPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@+id/imgPesanan"
+                android:text="Nama Pesanan"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="10sp"/>
+
+            <TextView
+                android:id="@+id/txtHargaPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNamaPesanan"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@+id/imgPesanan"
+                android:text="Harga Pesanan"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtAlamatPesanan"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHargaPesanan"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@+id/imgPesanan"
+                android:text="Alamat"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txttanggalPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAlamatPesanan"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@+id/imgPesanan"
+                android:text="tanggal"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
